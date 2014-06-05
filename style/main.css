@@ -1,0 +1,172 @@
+html, body
+{
+    margin:0;
+    padding:0;
+}
+
+body{
+    margin:10px;
+}
+
+a
+{
+    color: #000000;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.container
+{
+    width:380px;
+    margin:0 auto;
+    background-color: #FCFCFC;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.heading{
+    margin-bottom: 15px;
+}
+
+.heading:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.title
+{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+    padding:0;
+    display: block;
+    float:left;
+
+    color:#000000;
+    text-align:center;
+    font-family: Verdana;
+}
+
+.game-content
+{
+    width:380px;
+    height:380px;
+    box-shadow: 0 0 10px 2px #EEEEEE;
+    border:1px solid #CCCCCC;
+    position:relative;
+}
+
+.footer
+{
+    font-family: Verdana;
+    color:#000000;
+    font-size: 12px;
+}
+
+.reset-button
+{
+    border-radius: 50%;
+    border:2px solid #CCCCCC;
+    color:#000000;
+    margin: 0;
+    display: block;
+    float:right;
+    height:45px;
+    width:45px;
+    text-align: center;
+    font-size:12px;
+    line-height: 45px;
+    font-family: Verdana;
+    clear:right;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 400px){
+    html, body
+    {
+        margin:0;
+        padding:0;
+    }
+
+    body
+    {
+        margin:10px;
+    }
+
+    .container
+    {
+        width:300px;
+        margin:0 auto;
+        background-color: #FCFCFC;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    .heading{
+        margin-bottom: 15px;
+    }
+
+    .heading:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    .title
+    {
+        font-size: 40px;
+        font-weight: bold;
+        margin: 0;
+        padding:0;
+        display: block;
+        float:left;
+
+        color:#000000;
+        text-align:center;
+        font-family: Verdana;
+    }
+
+    .game-content
+    {
+        width:300px;
+        height:300px;
+        box-shadow: 0 0 10px 2px #EEEEEE;
+        border:1px solid #CCCCCC;
+        position:relative;
+    }
+
+    .footer
+    {
+        font-family: Verdana;
+        color:#000000;
+        font-size: 12px;
+    }
+
+    .reset-button
+    {
+        border-radius: 50%;
+        border:2px solid #CCCCCC;
+        color:#000000;
+        margin: 0;
+        display: block;
+        float:right;
+        height:45px;
+        width:45px;
+        text-align: center;
+        font-size:12px;
+        line-height: 45px;
+        font-family: Verdana;
+        clear:right;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+}
