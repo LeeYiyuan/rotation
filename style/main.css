@@ -8,14 +8,6 @@ body{
     margin:10px;
 }
 
-a
-{
-    color: #000000;
-    font-weight: bold;
-    text-decoration: underline;
-    cursor: pointer;
-}
-
 .container
 {
     width:380px;
@@ -42,10 +34,10 @@ a
 {
     font-size: 40px;
     font-weight: bold;
+    line-height:50px;
     margin: 0;
     padding:0;
-    display: block;
-    float:left;
+    display: inline-block;
 
     color:#000000;
     text-align:center;
@@ -68,22 +60,39 @@ a
     font-size: 12px;
 }
 
-.reset-button
+.footer a
+{
+    color: #000000;
+    cursor: pointer;
+    font-weight:bold;
+}
+
+.button-wrapper
+{
+    display: inline-block;
+    float:right;
+}
+
+.button
 {
     border-radius: 50%;
     border:2px solid #CCCCCC;
     color:#000000;
     margin: 0;
-    display: block;
-    float:right;
-    height:45px;
-    width:45px;
+    display: inline-block;
+    height:50px;
+    width:50px;
     text-align: center;
     font-size:12px;
-    line-height: 45px;
+    line-height: 50px;
     font-family: Verdana;
     clear:right;
     font-weight: bolder;
+    cursor: pointer;
+}
+
+.button a
+{
     cursor: pointer;
 }
 
@@ -150,23 +159,40 @@ a
         color:#000000;
         font-size: 12px;
     }
-
-    .reset-button
+    
+    .footer a
+    {
+        color: #000000;
+        cursor: pointer;
+        font-weight:bold;
+    }
+    
+    .button-wrapper
+    {
+        display: inline-block;
+        float:right;
+    }
+    
+    .button
     {
         border-radius: 50%;
         border:2px solid #CCCCCC;
         color:#000000;
         margin: 0;
-        display: block;
-        float:right;
-        height:45px;
-        width:45px;
+        display: inline-block;
+        height:50px;
+        width:50px;
         text-align: center;
         font-size:12px;
-        line-height: 45px;
+        line-height: 50px;
         font-family: Verdana;
         clear:right;
         font-weight: bolder;
+        cursor: pointer;
+    }
+
+    .button a
+    {
         cursor: pointer;
     }
 }

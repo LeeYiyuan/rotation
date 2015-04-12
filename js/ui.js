@@ -1,6 +1,7 @@
 function UI(){
     this.canvas = document.getElementById('grid-canvas');
     this.resetButton = document.getElementById('reset-button');
+    this.autoplayButton = document.getElementById('autoplay-button');
     this.tileRadius = 30;
     this.tileSpacing = 60;
     this.tileRotationRadius = Math.sqrt(Math.pow(this.tileSpacing + 2 * this.tileRadius, 2) / 2); // Pythagoras theorem
@@ -10,11 +11,17 @@ function UI(){
     this.onRotatePressed = null;
     this.onOverlayPressed = null;
     this.onResetClicked = null;
+    this.onAutoplayClicked = null;
 
     this.canvas.addEventListener('mousedown', this.onCanvasClick.bind(this), false);
     this.resetButton.addEventListener('click', function(){
         if (this.onResetClicked != null){
             this.onResetClicked();
+        }
+    }.bind(this), false);
+    this.autoplayButton.addEventListener('click', function(){
+        if (this.onAutoplayClicked != null){
+            this.onAutoplayClicked();
         }
     }.bind(this), false);
 };
