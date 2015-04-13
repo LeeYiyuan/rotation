@@ -75,7 +75,7 @@ GameManager.prototype.aiMove = function(){
             
     if (this.autoplaySequence.length == 0){
         var sequence = AI.computeSequence(this.grid);
-        if (sequence.length === undefined){
+        if (typeof sequence.length === 'undefined'){
             this.autoplaySequence.push(sequence);
         }else{
             for(var i = 0; i < sequence.length; i++){
